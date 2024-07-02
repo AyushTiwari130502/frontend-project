@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Task Management Application</h1>
+    </header>
+    <main>
+        <section id="task-list">
+            <h2>Tasks</h2>
+            <button id="add-task-btn">Add Task</button>
+            <ul id="tasks">
+                <!-- Tasks will be appended here -->
+            </ul>
+        </section>
+        <section id="task-form-section" class="hidden">
+            <h2 id="form-title">Add Task</h2>
+            <form id="task-form">
+                <label for="task-title">Title:</label>
+                <input type="text" id="task-title" name="title" required>
+                <label for="task-description">Description:</label>
+                <textarea id="task-description" name="description" required></textarea>
+                <label for="task-due-date">Due Date:</label>
+                <input type="date" id="task-due-date" name="due-date" required>
+                <button type="submit">Save Task</button>
+            </form>
+            <button id="cancel-btn">Cancel</button>
+        </section>
+        <section id="task-details-section" class="hidden">
+            <h2>Task Details</h2>
+            <p id="detail-title"></p>
+            <p id="detail-description"></p>
+            <p id="detail-due-date"></p>
+            <button id="edit-task-btn">Edit</button>
+            <button id="delete-task-btn">Delete</button>
+            <button id="back-btn">Back</button>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
